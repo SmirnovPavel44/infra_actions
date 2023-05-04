@@ -64,7 +64,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.SERVER_USER }}
         key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролем
+        
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull beet1ejuice/infra_actions:latest
